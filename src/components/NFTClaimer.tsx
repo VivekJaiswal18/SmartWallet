@@ -22,7 +22,7 @@ export const NFTClaimer: React.FC<NFTClaimerProps> = ({recieverAddress, dropCont
         balanceOf,
         {
             contract: dropContract,
-            owner: recieverAddress, 
+            owner: recieverAddress || '', 
             tokenId: tokenId,
             queryOptions: {enabled: !!recieverAddress}
         }
