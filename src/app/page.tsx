@@ -79,21 +79,21 @@ function ThirdwebResources() {
 
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <ArticleCard
-        title="EduVault Features"
+        title="SmartWallet Features"
         href="/"
-        description="Learn about EduVault more"
+        description="Learn about SmartWallet more"
       />
 
       <ArticleCard
         title="Capabalities and Uses"
         href="/"
-        description="EduVault provides a vast variety of uses cases specifically for education"
+        description="SmartWallet provides a vast variety of uses cases specifically for education"
       />
 
       <ArticleCard
-        title="EduVault Dashboard"
+        title="SmartWallet Dashboard"
         href="/"
-        description="Connect, Publish Gated content, and manage that from the dashboard."
+        description="Connect, Publish content, and manage that from the dashboard."
       />
     </div>
     </div>

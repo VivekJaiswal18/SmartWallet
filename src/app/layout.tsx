@@ -36,9 +36,9 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EduVault",
+  title: "SmartWallet",
   description:
-    "EduVault",
+    "SmartWallet",
 };
 
 export default function RootLayout({
