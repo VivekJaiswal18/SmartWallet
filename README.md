@@ -1,59 +1,9 @@
+## SmartWallet
 
-![tw-banner](https://github.com/thirdweb-example/next-starter/assets/57885104/20c8ce3b-4e55-4f10-ae03-2fe4743a5ee8)
+These are the contract addresses -
 
-# thirdweb-next-starter
+For Deploying on EDU chain - 0x5765522ee393F157f4C063525720294d22Ee1DD1
 
-Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [next](https://nextjs.org/).
+For Deploying on Linea Sepolia chain - 0x9d28Ac49C6d3289c1015b62DCC6159F74d51ed31
 
-## Installation
-
-Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
-
-```bash
-  npx thirdweb create app --next
-```
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file:
-
-`CLIENT_ID`
-
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
-
-## Run locally
-
-Install dependencies
-
-```bash
-yarn
-```
-
-Start development server
-
-```bash
-yarn dev
-```
-
-Create a production build
-
-```bash
-yarn build
-```
-
-Preview the production build
-
-```bash
-yarn start
-```
-
-## Resources
-
-- [Documentation](https://portal.thirdweb.com/typescript/v5)
-- [Templates](https://thirdweb.com/templates)
-- [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
-
-## Need help?
-
-For help or feedback, please [visit our support site](https://thirdweb.com/support)
+For Deploying on Scroll Sepolia chain - 0xB8c64a13591a0cE2018EDA17f7fe233CE90177dA
