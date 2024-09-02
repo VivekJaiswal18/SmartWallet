@@ -3,21 +3,21 @@
 import { defineChain, getContract } from "thirdweb";
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
 import { client } from "../client";
-import { lineaSepolia, scrollSepoliaTestnet } from "thirdweb/chains";
+import { lineaSepolia, scrollSepoliaTestnet, sepolia } from "thirdweb/chains";
 import { NFTClaimer} from "@/components/NFTClaimer"
 
 export default function Home() {
   const account = useActiveAccount();
 
-  const scrollContract = getContract({
+  const sepoliaContract = getContract({
     client: client,
-    chain: defineChain(534351),
-    address: "0xB8c64a13591a0cE2018EDA17f7fe233CE90177dA"
+    chain: sepolia,
+    address: "0xB7B3908cAaC849e15b7b66337B1c78dABf93C10d"
   });
-  const opencampusContract = getContract({
+  const lineaContract = getContract({
     client: client,
-    chain: defineChain(656476),
-    address: "0x5765522ee393F157f4C063525720294d22Ee1DD1"
+    chain: lineaSepolia,
+    address: "0x209DBE24793004150270FffE2F8644F331e7b2A0"
   })
 
 
@@ -39,20 +39,20 @@ export default function Home() {
       </div>
          <div className="text-center max-w-2xl">
         <p className="mb-2 text-xl">Here Both the NFTs are listed on different BlockChains</p>
-        <p className="mb-2">MadLad NFT is on Scroll Sepolia Testnet and Car_NFT is on Open Campus</p>
+        <p className="mb-2">MadLad NFT is on Sepolia Testnet and Car NFT is on Linea Sepolia</p>
         <p className="mb-2">Here you are getting a SmartWallet</p>
-        <p className="mb-2">That can perform Multichain Transactions with the same wallet address.</p>
+        <p className="mb-2">That will perform Multichain Transactions with the same wallet address.</p>
       
         <div className="flex flex-row">
         <NFTClaimer
           recieverAddress={account?.address}
-          dropContract={scrollContract}
+          dropContract={sepoliaContract}
           tokenId={0n}
         />
         <div className="h-auto w-[1px] bg-gray-600 mx-12 mt-8"/>
         <NFTClaimer
         recieverAddress={account?.address}
-        dropContract={opencampusContract}
+        dropContract={lineaContract}
         tokenId={0n}/>
         </div>
         </div>
