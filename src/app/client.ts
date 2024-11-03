@@ -2,7 +2,8 @@ import { createThirdwebClient } from "thirdweb";
 
 // Replace this with your client ID string
 // refer to https://portal.thirdweb.com/typescript/v5/client on how to get a client ID
-const PUBLIC_TEMPLATE_CLIENT_ID='13e3d5fac63e2fa6164efa45ff03b0b9'
+// const PUBLIC_TEMPLATE_CLIENT_ID='13e3d5fac63e2fa6164efa45ff03b0b9'
+const PUBLIC_TEMPLATE_CLIENT_ID='d04ec299d935fcdf47aca3dab7a7ef5b'
 const clientId = PUBLIC_TEMPLATE_CLIENT_ID;
 
 if (!clientId) {
