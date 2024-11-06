@@ -32,6 +32,7 @@ export default function Home() {
   const [selectedChain, setSelectedChain] = useState("sepolia");
 
   // Function to handle chain selection
+  // @ts-ignore
   const handleChainChange = (event) => {
     setSelectedChain(event.target.value);
   };
